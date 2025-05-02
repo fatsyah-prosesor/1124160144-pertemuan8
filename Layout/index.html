@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Layout Sederhana</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+    }
+    .kotak-sebelah-kiri {
+      width: 250px;
+      background-color: #c4c2c3;
+      padding: 20px;
+    }
+    .profile-photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .kotak-sebelah-kiri h2 {
+      margin-bottom: 20px;
+    }
+    .kotak-sebelah-kiri ul {
+      list-style: none;
+    }
+    .kotak-sebelah-kiri ul li {
+      margin-bottom: 15px;
+    }
+    .kotak-sebelah-kiri ul li a {
+      text-decoration: none;
+      color: #000000;
+      font-size: 18px;
+    }
+    .content {
+      flex: 1;
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="kotak-sebelah-kiri">
+    <img src="1722957013595.jpeg" alt="Foto Profil" class="profile-photo">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="konten.html">Beranda</a></li>
+      <li><a href="profil.html">Profil</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+  </div>
+  <div class="content">
+  </div>
+</body>
+</html>
